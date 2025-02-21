@@ -4,37 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevOps Deployment</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #38a169, #4299e1, #805ad5);
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #2d3748;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            color: #f7fafc;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        header p {
+            color: #cbd5e0;
+            font-size: 18px;
+        }
+
+        /* Main Section */
+        section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        section h2 {
+            color: #edf2f7;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        section p {
+            color: #e2e8f0;
+            margin-top: 10px;
+        }
+
+        section img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #ecc94b;
+            color: #1a202c;
+            padding: 12px 24px;
+            border: none;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #d69e2e;
+        }
+
+        /* Grid Section */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .grid-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .grid-item h3 {
+            color: #f7fafc;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .grid-item p {
+            color: #cbd5e0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2d3748;
+            text-align: center;
+            padding: 10px;
+            color: #f7fafc;
+            margin-top: 20px;
+        }
+    </style>
 </head>
-<body class="bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 text-white">
-    <header class="p-6 text-center bg-grey-800 shadow-lg">
-        <h1 class="text-4xl font-bold text-black">DevOps Deployment</h1>
-        <p class="text-gray-200 mt-2">Automate and streamline your deployment processes</p>
+<body>
+    <header>
+        <h1>DevOps Deployment</h1>
+        <p>Automate and streamline your deployment processes</p>
     </header>
-    
-    <section class="text-center py-12 px-6">
-        <h2 class="text-3xl font-semibold text-black">Efficient Deployment Strategies</h2>
-        <p class="mt-4 text-gray-100">Ensure smooth, secure, and scalable deployment pipelines.</p>
-        <img src="devops deploy.jpg" alt="DevOps Deployment" class="mx-auto  rounded-lg shadow-lg">
-        <button class="mt-6 px-6 py-2 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold rounded">Get Started</button>
+
+    <section>
+        <h2>Efficient Deployment Strategies</h2>
+        <p>Ensure smooth, secure, and scalable deployment pipelines.</p>
+        <img src="devops deploy.jpg" alt="DevOps Deployment"><br>
+        <button>Get Started</button>
     </section>
 
-    <section class="grid md:grid-cols-3 gap-8 p-6">
-        <div class="bg-green p-6 rounded-lg shadow-lg">
-            <h3 class="text-xl font-semibold text-black">Continuous Deployment</h3>
-            <p class="text-gray-100 mt-2">Deploy code automatically with confidence.</p>
+    <section class="grid-container">
+        <div class="grid-item">
+            <h3>Continuous Deployment</h3>
+            <p>Deploy code automatically with confidence.</p>
         </div>
-        <div class="bg-purple-500 p-6 rounded-lg shadow-lg">
-            <h3 class="text-xl font-semibold text-black">Infrastructure as Code</h3>
-            <p class="text-gray-100 mt-2">Manage and provision infrastructure efficiently.</p>
+        <div class="grid-item">
+            <h3>Infrastructure as Code</h3>
+            <p>Manage and provision infrastructure efficiently.</p>
         </div>
-        <div class="bg-grey-600 p-6 rounded-lg shadow-lg">
-            <h3 class="text-xl font-semibold text-black">Monitoring & Logging</h3>
-            <p class="text-gray-100 mt-2">Track and analyze deployment performance.</p>
+        <div class="grid-item">
+            <h3>Monitoring & Logging</h3>
+            <p>Track and analyze deployment performance.</p>
         </div>
     </section>
-    
-    <footer class="text-center p-4 bg-grey-600 mt-6 text-black">
+
+    <footer>
         <p>&copy; 2025 DevOps Deployment. All rights reserved.</p>
     </footer>
 </body>
